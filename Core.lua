@@ -333,14 +333,15 @@ function UILib:CreateWindow(options)
 		Parent = main,
 	})
 
-		Gui = gui,
-		Main = main,
-		Tabs = {},
-		Visible = true,
-		_search = {},
-		_decor = {},
-		_keybinds = {},
-	}
+local window = {
+    Gui = gui,
+    Main = main,
+    Tabs = {},
+    Visible = true,
+    _search = {},
+    _decor = {},
+    _keybinds = {},
+}
 
 	local SIDEBAR_W = 176
 	local content
