@@ -55,7 +55,7 @@ local function findTank(name)
 end
 local R = {}
 R.cheatLabels = {}
-R.snapMoveMethod = "Fast Step"
+R.snapMoveMethod = "Fast Step (Basically makes it look jittery)"
 function R.isTankModel(t)
 	return t:IsA("Model")
 		and t:FindFirstChild("Base") ~= nil
